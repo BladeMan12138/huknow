@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbg">
+    <include layout="@layout/display_backrrow"/>
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_gravity="center"
+        android:background="@drawable/whoda"/>
+    <EditText
+        android:layout_marginTop="10dp"
+        android:textCursorDrawable="@null"
+        android:background="@drawable/shape_gray"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:hint="账号/用户名"
+        android:ems="10"
+        android:id="@+id/edit_new_user"
+        android:layout_centerVertical="true"
+        />
+
+    <EditText
+        android:textCursorDrawable="@null"
+        android:background="@drawable/shape_gray"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:password="true"
+        android:hint="密码"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/edit_new_passwd"
+        android:layout_below="@+id/edit_user"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:textCursorDrawable="@null"
+        android:background="@drawable/shape_gray"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:password="true"
+        android:hint="再输一遍密码"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/edit_new_passwd2"
+        android:layout_below="@+id/edit_user"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:textCursorDrawable="@null"
+        android:background="@drawable/shape_gray"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+
+        android:hint="选择所在大学"
+        android:ems="10"
+        android:id="@+id/select_school"
+        android:layout_below="@+id/edit_user"
+        android:layout_marginTop="10dp"
+        android:editable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:textCursorDrawable="@null"
+        android:background="@drawable/shape_gray"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:hint="商家店铺名"
+        android:inputType="text"
+        android:ems="10"
+        android:id="@+id/marketName"
+        android:layout_below="@+id/edit_user"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentStart="true" />
+    <EditText
+        android:textCursorDrawable="@null"
+        android:background="@drawable/shape_gray"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:inputType="number"
+        android:hint="联系方式"
+        android:ems="10"
+        android:id="@+id/edit_telephone"
+        android:layout_below="@+id/edit_user"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentStart="true" />
+
+
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/shape"
+        android:text="注      册"
+        android:textSize="20dp"
+        android:onClick="busi_register"
+        android:textColor="@color/colorWhite"
+        android:id="@+id/button_register"
+        android:layout_below="@+id/edit_passwd"
+        android:layout_alignEnd="@+id/edit_passwd"
+        android:layout_marginTop="20dp" />
+
+</LinearLayout>

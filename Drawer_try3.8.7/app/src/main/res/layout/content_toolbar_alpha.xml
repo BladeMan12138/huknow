@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    android:background="@drawable/background_green_rectangle"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/id_drawerLayout_alpha"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <sd.rtyy.com.example.qiu.drawer_try.AlphaTitleScrollView.AlphaTitleScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="@color/colorBackgroundDark"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scrollview">
+
+
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+
+            android:orientation="vertical">
+
+            <!-- 显示的head为ImageView -->
+
+
+            <ImageView
+
+                android:layout_height="750px"
+                android:layout_width="match_parent"
+                android:id="@+id/head"
+                android:src="@drawable/green"
+                android:scaleType="fitXY"/>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/id_pic"
+            android:layout_below="@id/head"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+
+            android:background="@color/colorBackgroundLight"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/id_title"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="标题"
+                android:textSize="50px"
+                android:gravity="left"/>
+
+            <TextView
+                android:id="@+id/id_price"
+                android:layout_below="@id/id_title"
+                android:layout_marginTop="10dp"
+                android:layout_height="70dp"
+                android:layout_width="match_parent"
+                android:text="¥0.00"
+                android:textSize="50dp"
+                android:textColor="#fa0101"
+                android:gravity="left"/>
+            <TextView
+                android:id="@+id/id_mark"
+                android:layout_below="@id/id_price"
+                android:layout_marginTop="10dp"
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:text="个性标签"
+                android:textSize="30px"
+
+                android:gravity="left"/>
+
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:id="@+id/id_des"
+                android:layout_below="@id/id_pic"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorBackgroundLight"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/id_describe"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="250dp"
+                    android:layout_width="match_parent"
+
+                    android:text="详细说明详细说明详细说明"
+                    android:textSize="50px"
+                    android:gravity="left"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:id="@+id/id_pro"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:layout_below="@id/id_des"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/colorBackgroundLight"
+                android:orientation="horizontal">
+
+
+                <ImageButton
+                    android:id="@+id/id_salers"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/touxiang"
+                    android:layout_marginLeft="20dp"
+                    />
+                <LinearLayout
+                    android:id="@+id/id_users_msg"
+                    android:layout_toRightOf="@id/id_salers"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/id_users_name"
+                        android:layout_width="wrap_content"
+                        android:text="用户名"
+                        android:textSize="50px"
+                        android:layout_height="60dp"
+                        />
+                    <TextView
+                        android:id="@+id/id_users_desc"
+                        android:layout_below="@id/id_users_name"
+                        android:layout_width="wrap_content"
+                        android:text="个人简介"
+                        android:textSize="30px"
+                        android:layout_height="40dp"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </sd.rtyy.com.example.qiu.drawer_try.AlphaTitleScrollView.AlphaTitleScrollView>
+
+    <!-- title标题栏-->
+
+    <LinearLayout
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:id="@+id/title"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary">
+
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_height="30dp"
+        android:layout_width="30dp"
+        android:background="@drawable/arrow"
+        android:layout_marginTop="11dp"
+        android:layout_marginLeft="11dp"> </ImageButton>
+
+                <ImageButton
+                    android:layout_height="30dp"
+                    android:layout_width="30dp"
+                    android:onClick="OpenRightMenutoSelect"
+                    android:background="@drawable/more"
+                    android:layout_marginTop="11dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="11dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="right"> </ImageButton>
+
+</LinearLayout>
+
+</RelativeLayout>
+
+    <fragment
+        android:layout_height="match_parent"
+        android:layout_width="100dp"
+        android:id="@+id/id_right_menu_2"
+        android:tag="RIGHT"
+        android:layout_gravity="right"
+        android:name="sd.rtyy.com.example.qiu.drawer_try.MenuRightFragment"/>
+
+</android.support.v4.widget.DrawerLayout>

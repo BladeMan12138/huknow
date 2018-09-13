@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:text="请输入竞拍价"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:textColor="#272727"/>
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:text="¥"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/color_fragment1_price"/>
+
+        <EditText
+            android:id="@+id/auc_currentP"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="numberDecimal"
+            android:gravity="center"
+            android:textSize="25sp"
+
+            />
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#46A3FF"
+        android:text="确      定"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        />
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+    android:background="@color/colorBackgroundDark"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout
+        android:background="@color/colorBackgroundLight"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_marginBottom="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="1dp">
+
+    <ImageView
+        android:layout_height="220dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="0dp"
+        android:id="@+id/image"
+        android:src="@drawable/green"
+        android:layout_gravity="top"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="5dp"
+        android:id="@+id/text"
+        android:textSize="20sp"
+        android:layout_marginLeft="15dp"
+        android:text="文字"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="5dp"
+        android:id="@+id/text2"
+        android:textSize="30sp"
+        android:layout_marginLeft="15dp"
+
+        android:text="价格"
+        android:textColor="@color/colorPrimaryDark"/>
+
+</LinearLayout>
+
+</LinearLayout>

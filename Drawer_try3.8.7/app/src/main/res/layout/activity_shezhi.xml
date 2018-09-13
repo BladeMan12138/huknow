@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#E8E8E8"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/toolbar_back"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+
+        <ImageView
+            android:id="@+id/setting_advice"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:onClick="startAdvice"
+            android:background="@color/colorWhite"
+            android:gravity="left|center_vertical"
+            android:textColor="#363636"
+            />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignRight="@+id/setting_advice"
+            android:background="@color/colorWhite"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:src="@drawable/enter1"/>
+
+        <ImageView
+            android:id="@+id/service"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:gravity="left|center_vertical"
+            android:background="@color/colorWhite"
+            android:src="@drawable/survey"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  提出意见"
+            android:gravity="center_vertical"
+            android:background="@color/colorWhite"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/service" />
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="4dp"/>
+    //android:src="@drawable/straight"
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+
+        <ImageView
+            android:id="@+id/setting_storage"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:onClick="startMemory"
+            android:background="@color/colorWhite"
+            android:gravity="left|center_vertical"
+            android:textColor="#363636"
+            />
+
+
+
+        <ImageView
+            android:id="@+id/storage"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:gravity="left|center_vertical"
+            android:background="@color/colorWhite"
+            android:src="@drawable/delete"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true" />
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  清除缓存"
+            android:gravity="center_vertical"
+            android:background="@color/colorWhite"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/storage" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignRight="@+id/setting_storage"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@color/colorWhite"
+            android:src="@drawable/enter1"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="4dp"/>
+    //android:src="@drawable/straight"
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+
+        <ImageView
+            android:id="@+id/setting_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@color/colorWhite"
+            android:gravity="left|center_vertical"
+            android:textColor="#363636"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="        消息提醒"
+            android:gravity="center_vertical"
+            android:background="@color/colorWhite"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/message"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:id="@+id/message"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:gravity="left|center_vertical"
+            android:background="@color/colorWhite"
+            android:src="@drawable/remind"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true" />
+
+        <ToggleButton
+            android:id="@+id/mTogBtn"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:background="@android:color/transparent"
+            android:button="@drawable/toggle_btn"
+            android:checked="false"
+            android:text=""
+            android:textOff=""
+            android:textOn=""
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true" />
+
+        <!--<ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+           "
+            android:background="@color/colorWhite"
+            android:src="@drawable/enter1"/>-->
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="4dp"/>
+    //android:src="@drawable/straight"
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+
+        <ImageView
+            android:id="@+id/setting_about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@color/colorWhite"
+            android:gravity="left|center_vertical"
+            android:textColor="#363636"
+            android:onClick="startAbout"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="        关于"
+            android:gravity="center_vertical"
+            android:background="@color/colorWhite"
+            android:textSize="20sp"
+            android:id="@+id/textView"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/about"
+            android:layout_alignParentStart="true"
+            android:onClick="startAbout"/>
+
+        <ImageView
+            android:id="@+id/about"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:gravity="left|center_vertical"
+            android:background="@color/colorWhite"
+            android:src="@drawable/all"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:onClick="startAbout"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_alignRight="@+id/setting_about"
+            android:background="@color/colorWhite"
+            android:src="@drawable/enter1"
+            android:onClick="startAbout"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/logoff"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:text="退出登录"
+        android:textColor="#EE0000"
+        android:textSize="16sp"
+        />
+
+
+</LinearLayout>

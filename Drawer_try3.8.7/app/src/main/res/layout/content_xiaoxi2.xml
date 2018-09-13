@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:background="#c4c4c4"
+    tools:showIn="@layout/activity_xiaoxi2"
+    tools:context="sd.rtyy.com.example.qiu.drawer_try.Left_title_second.XiaoxiActivity">
+    <EditText
+
+        android:background="#c4c4c4"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="70dp"
+        android:id="@+id/edit_describe_xiaoxi"
+        android:hint="写下你想对TA说的话:"
+        android:gravity="left|top"
+        android:scrollbars="vertical"
+        android:lines="20"
+        android:textCursorDrawable="@null"
+        android:maxLines="20"
+        android:layout_alignParentStart="true"
+        android:numeric="decimal"
+        android:inputType="textMultiLine"/>
+</RelativeLayout>

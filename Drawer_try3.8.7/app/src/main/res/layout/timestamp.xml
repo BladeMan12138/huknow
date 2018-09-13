@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+    <TextView
+        android:id="@+id/time"
+
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:text="update_time"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_weight="0.04" />
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:id="@+id/Date"
+        android:gravity="center"
+        android:text="Date"
+        />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:id="@+id/chazhi"
+        android:gravity="center"
+        android:text="差值"
+        />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:id="@+id/shuaxin"
+        android:text="刷新"
+        android:textSize="20sp"
+        />
+</LinearLayout>

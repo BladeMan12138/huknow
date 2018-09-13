@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/colorBackgroundLight"
+    android:layout_marginTop="50dp"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_up"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+        <Button
+            android:id="@+id/id_new_second"
+            android:gravity="center"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginRight="3dp"
+            android:textSize="50px"
+            android:textColor="@color/colorBackgroundLight"
+            android:text="发布物品"
+            android:background="@drawable/shape_green"/>
+
+        <Button
+            android:id="@+id/id_new_pai"
+
+            android:gravity="center"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:textSize="50px"
+            android:textColor="@color/colorAccent"
+            android:layout_marginLeft="3dp"
+            android:text="发布竞拍"
+            android:background="@drawable/shape_righttop"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_down"
+        android:layout_below="@id/id_up"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+        <Button
+            android:id="@+id/id_new_change"
+            android:gravity="center"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginRight="3dp"
+            android:textSize="50px"
+            android:textColor="@color/colorAccent"
+            android:text="交换物品"
+            android:background="@drawable/shape_leftbottom"/>
+        <Button
+            android:id="@+id/id_new_sale"
+
+            android:gravity="center"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+
+            android:layout_marginLeft="3dp"
+            android:text="促销信息"
+            android:textSize="50px"
+            android:textColor="@color/colorBackgroundLight"
+            android:background="@drawable/shape_rightbottom"/>
+
+    </LinearLayout>
+
+</LinearLayout>

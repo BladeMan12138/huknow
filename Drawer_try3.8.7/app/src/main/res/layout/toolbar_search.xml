@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    android:layout_height="75dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/blank"/>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_gravity="fill_horizontal"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        android:layout_height="50dp"
+        android:layout_below="@id/blank">
+
+
+        <ImageButton
+
+            android:layout_height="@dimen/icons_small_wide"
+            android:layout_width="@dimen/icons_small_wide"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/search"
+            android:id="@+id/list_search"/>
+
+        <!--<TextView android:id="@+id/list_text_search"
+            android:layout_height="50dp"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@+id/list_search"
+            android:layout_toLeftOf="@+id/list_jiahao"
+            android:text="标题"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:singleLine="true" />-->
+        <TextView
+            android:id="@+id/select_school_f1"
+            android:textSize="16sp"
+            android:hint="选择大学"
+            android:textColorHint="#D0D0D0"
+            android:focusable="false"
+            android:textColor="#D0D0D0"
+            android:focusableInTouchMode="false"
+
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+   
+
+
+
+        <ImageButton
+
+            android:layout_height="@dimen/icons_small_wide"
+            android:layout_width="@dimen/icons_small_wide"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/jiahao"
+            android:id="@+id/list_jiahao"/>
+
+
+    </RelativeLayout>
+</RelativeLayout>

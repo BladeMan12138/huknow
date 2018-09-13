@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    android:minHeight="?android:attr/listPreferredItemHeightSmall"
+    android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+    android:paddingStart="?android:attr/listPreferredItemPaddingStart"
+    android:gravity="center_vertical"
+    android:textAppearance="?android:attr/textAppearanceListItemSmall"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:background="@color/colorBackgroundDark"
+    android:orientation="vertical"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:minHeight="?android:attr/listPreferredItemHeightSmall"
+        android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+        android:paddingStart="?android:attr/listPreferredItemPaddingStart"
+        android:gravity="center_vertical"
+        android:background="@color/colorBackgroundLight"
+        android:textAppearance="?android:attr/textAppearanceListItemSmall"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_height="100dp"
+            android:layout_width="100dp"
+            android:layout_marginBottom="7dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="7dp"
+            android:id="@+id/list_img_pic">
+        </ImageView>
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/titleAndPrice"
+            android:orientation="vertical"
+            android:layout_toRightOf="@id/list_img_pic">
+
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/itemTitle"
+                android:text="标题："
+                android:textSize="30sp"> </TextView>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/itemPrice"
+                android:text="¥0.00"
+                android:textSize="20sp"
+                android:layout_below="@id/itemTitle"
+                > </TextView>
+
+
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

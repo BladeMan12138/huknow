@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="sd.rtyy.com.example.qiu.drawer_try">
+    <!--允许程序打开网络套接字-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--允许程序设置内置sd卡的写权限-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="andorid.permission.MONUN_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--允许程序获取网络状态-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--允许程序访问WiFi网络信息-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--允许程序读写手机状态和身份-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!--允许程序访问CellID或WiFi热点来获取粗略的位置-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/whoda"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="e2034e2a19a422dac690888647949fe1"/>
+
+        <activity
+            android:name=".login.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ZhuYeMian"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".login.register"
+            android:screenOrientation="portrait" />
+        <activity android:name=".NEW.timeStamp"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".toolbar_alpha"
+            android:label="@string/title_activity_toolbar_alpha"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity
+            android:name=".LeftTitle.MessageActivity"
+            android:label="@string/title_activity_message"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity
+            android:name=".LeftTitle.FocusActivity"
+            android:label="@string/title_activity_focus"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity
+            android:name=".LeftTitle.MoonActivity"
+            android:label="@string/title_activity_moon"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity
+            android:name=".Left_title_second.XiaoxiActivity"
+            android:label="@string/title_activity_xiaoxi"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".LeftTitle.TreasuresActivity"
+            android:label="@string/title_activity_treasures"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".SearchInSecondMarket"
+            android:label="@string/title_activity_search_in_second_market"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".NewThings"
+            android:label="@string/title_activity_new_things"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".NEW.NewSecond"
+            android:label="@string/title_activity_new_second"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <!--<activity-->
+            <!--android:name=".NEW.New_Auction"-->
+            <!--android:label="@string/title_activity_new__auction"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:theme="@style/AppTheme.NoActionBar">-->
+        <!--</activity>-->
+        <activity
+            android:name=".NEW.New_Change"
+            android:label="@string/title_activity_new__change"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".NEW.New_Sale"
+            android:label="@string/title_activity_new__sale"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".NEW.Auction_alpha"
+            android:label="@string/title_activity_auction_alpha"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".NEW.Change_alpha"
+            android:label="@string/title_activity_change_alpha"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".NEW.Sale_alpha"
+            android:label="@string/title_activity_sale_alpha"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".LeftTitle.HomesActivity"
+            android:label="@string/title_activity_homes"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".Left_title_second.LiuYan"
+            android:label="@string/title_activity_liu_yan"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name=".NEW.h_m_s_daojishi"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".fragment.display"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".fragment.displaytest2"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".NEW.NewSecond2"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+        <activity android:name=".NEW.New_Auction2"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name=".fragment.auction_display"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".LeftTitle.ShezhiActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".fragment.About"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".fragment.buyit"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".fragment.faceToface"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".map.PoiKeywordSearchActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".LeftTitle.AdviceActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".LeftTitle.myPublic_display"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".login.newBusiness"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <service android:name="com.amap.api.location.APSService"></service>
+    </application>
+
+</manifest>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/greenback"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <include layout="@layout/toolbar_back"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp">
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/advice"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:enabled="true"
+        android:gravity="top"
+        android:minLines="8"
+        android:maxLines="15"
+        android:scrollbars="vertical"
+        android:background="@drawable/inputtext"
+        android:layout_weight="0.52" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/submit_advice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="提交"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbg">
+
+<ImageView
+    android:layout_marginTop="50dp"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:layout_gravity="center"
+    android:background="@drawable/whoda"/>
+    <EditText
+        android:layout_marginTop="50dp"
+        android:textCursorDrawable="@null"
+        android:background="@drawable/shape_gray"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:hint="账号/用户名"
+        android:ems="10"
+        android:id="@+id/edit_user"
+        android:layout_centerVertical="true"
+        />
+
+    <EditText
+        android:textCursorDrawable="@null"
+        android:background="@drawable/shape_gray"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:password="true"
+        android:hint="密码"
+        android:ems="10"
+        android:id="@+id/edit_passwd"
+        android:layout_below="@+id/edit_user"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentStart="true" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal">
+    <CheckBox
+        android:id = "@+id/remember_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize = "15sp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:text="记住账号密码"
+        android:textColor="#D0D0D0"
+        />
+    <CheckBox
+        android:id="@+id/show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:text="显示密码"
+        android:textSize = "15sp"
+        android:textColor="#D0D0D0"/>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_marginLeft="40dp"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="您的身份是"
+            android:textSize="15sp"
+            android:textColor="#D0D0D0"
+            android:gravity="center"/>
+
+        <RadioGroup
+            android:id="@+id/identity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/Radio_student"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:text="学生"
+                android:textColor="#D0D0D0"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/Radio_business"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:text="商家"
+                android:textColor="#D0D0D0"
+                android:textSize="15sp" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/shape"
+        android:text="登      录"
+        android:textSize="20dp"
+        android:onClick="login"
+        android:textColor="@color/colorWhite"
+        android:id="@+id/button_load"
+        android:layout_below="@+id/edit_passwd"
+        android:layout_alignEnd="@+id/edit_passwd"
+        android:layout_marginTop="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="忘记密码？"
+            android:layout_marginLeft="50dp"
+            android:background="#00000000"
+            android:textColor="@color/colorLightblue"
+            android:id="@+id/button_forget"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true" />
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="新用户"
+            android:background="#00000000"
+            android:onClick="newUser"
+            android:textColor="@color/colorLightblue"
+            android:id="@+id/button_new"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            />
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:text="新商家"
+            android:background="#00000000"
+            android:onClick="newBusiness"
+            android:textColor="@color/colorLightblue"
+            android:id="@+id/newBusiness"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+
+    <ImageView
+        android:id="@+id/fruit_image"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_gravity="left"
+        android:background="#FFFFFF"/>
+
+
+    <TextView
+        android:id="@+id/fruit_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="left"
+        android:background="#FFFFFF"
+        android:gravity="center_vertical|left"
+        android:textSize="17sp"
+
+        />
+
+    <TextView
+            android:id="@+id/fruit_price"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="left"
+            android:background="#FFFFFF"
+            android:textColor="@color/color_fragment1_price"
+
+
+            android:textSize="22sp" />
+        <TextView
+            android:id="@+id/fruit_description"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="15sp"
+            android:background="#FFFFFF"
+            />
+
+
+
+</LinearLayout>

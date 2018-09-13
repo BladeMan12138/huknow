@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_homes" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="sd.rtyy.com.example.qiu.drawer_try.LeftTitle.HomesActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBackgroundDark"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/zeroLine"
+        android:orientation="vertical"
+        android:background="@color/colorBackgroundLight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:background="@color/colorBackgroundLight"
+            android:text="0人关注"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/zero_1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+        <TextView
+            android:background="@color/colorBackgroundLight"
+            android:text="个人简介"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/zero_2"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+        <TextView
+            android:background="@color/colorBackgroundLight"
+            android:text="个人标签"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/zero_3"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:background="@color/colorBackgroundLight"
+        android:id="@+id/firstLine"
+        android:layout_below="@id/zeroLine"
+        android:layout_marginTop="15dp"
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:background="@drawable/first"
+
+            android:id="@+id/first_img"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <TextView
+            android:background="@color/colorBackgroundLight"
+            android:text="个人资料"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/first_btn"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:background="@color/colorBackgroundLight"
+        android:id="@+id/secondLine"
+        android:layout_below="@id/firstLine"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:background="@drawable/second"
+
+            android:id="@+id/second_img"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <TextView
+            android:background="@color/colorBackgroundLight"
+            android:text="已发布的商品"
+
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/second_btn"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:background="@color/colorBackgroundLight"
+        android:id="@+id/thirdLine"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+
+        android:layout_below="@id/secondLine"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:background="@drawable/third"
+
+            android:id="@+id/third_img"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <TextView
+            android:background="@color/colorBackgroundLight"
+            android:text="月光宝盒"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/third_btn"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+    </LinearLayout>
+
+</LinearLayout>
+</android.support.v4.widget.NestedScrollView>

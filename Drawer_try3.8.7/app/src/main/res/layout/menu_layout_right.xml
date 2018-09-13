@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center_vertical"
+        android:layout_centerVertical="true">
+
+    <ImageButton
+        android:layout_height="60dp"
+        android:layout_width="60dp"
+        android:layout_gravity="center"
+        android:id="@+id/shoucang"
+        android:background="@drawable/img_2"/>
+
+    <TextView
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:textColor="#ffffff"
+        android:text="收藏宝贝"/>
+
+</LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center_vertical"
+        android:layout_centerVertical="true">
+
+    <ImageButton
+        android:layout_height="60dp"
+        android:layout_width="60dp"
+        android:layout_gravity="center"
+        android:id="@+id/xiaoxi"
+        android:background="@drawable/img_3"/>
+
+    <TextView
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:textColor="#ffffff"
+        android:text="给TA留言"/>
+
+</LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center_vertical"
+        android:layout_centerVertical="true">
+
+    <ImageButton
+        android:layout_height="60dp"
+        android:layout_width="60dp"
+        android:layout_gravity="center"
+        android:id="@+id/guanzhu"
+        android:background="@drawable/img_4"/>
+
+    <TextView
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:textColor="#ffffff"
+        android:text="关注TA"/>
+
+</LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center_vertical"
+        android:layout_centerVertical="true">
+
+    <ImageButton
+        android:layout_height="60dp"
+        android:layout_width="60dp"
+        android:layout_gravity="center"
+        android:id="@+id/zhuye"
+        android:background="@drawable/wode"/>
+
+    <TextView
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:textColor="#ffffff"
+        android:text="进入TA的主页"/>
+
+</LinearLayout>
+
+</LinearLayout>

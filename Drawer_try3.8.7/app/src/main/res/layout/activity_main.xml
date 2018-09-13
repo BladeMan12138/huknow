@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <android.support.v4.widget.DrawerLayout
+    android:background="@drawable/background_green_rectangle"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/id_drawerLayout"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--
+    android:background="@drawable/qq"
+-->
+    <RelativeLayout
+
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/realtabcontent"
+            android:layout_weight="1"/>
+
+
+        <android.support.v4.app.FragmentTabHost
+            android:layout_width="fill_parent"
+            android:layout_height="55dip"
+            android:id="@android:id/tabhost"
+            android:background="@color/colorBackgroundLight">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@android:id/tabcontent"
+            android:layout_weight="0"/>
+
+    </android.support.v4.app.FragmentTabHost>
+
+    </LinearLayout>
+    <!--<Button
+        android:background="@drawable/youce"
+        android:layout_height="30dp"
+        android:layout_width="40dp"
+        android:onClick="OpenRightMenu"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"/>-->
+
+</RelativeLayout>
+
+    <fragment
+        android:layout_height="match_parent"
+        android:layout_width="280dp"
+        android:id="@+id/id_left_menu"
+        android:tag="LEFT"
+        android:layout_gravity="left"
+        android:name="sd.rtyy.com.example.qiu.drawer_try.MenuLeftFragment"/>
+
+   <!-- <fragment
+        android:layout_height="match_parent"
+        android:layout_width="100dp"
+        android:id="@+id/id_right_menu"
+        android:tag="RIGHT"
+        android:layout_gravity="right"
+        android:name="sd.rtyy.com.example.qiu.drawer_try.MenuRightFragment"/>-->
+
+</android.support.v4.widget.DrawerLayout>

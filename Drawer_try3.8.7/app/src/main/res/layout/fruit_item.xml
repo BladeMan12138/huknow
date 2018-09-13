@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:id="@+id/fruit_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="left"
+        android:background="#FFFFFF"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/who"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:id="@+id/fruit_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="left"
+                android:background="#FFFFFF"
+                android:gravity="center_vertical|left"
+                android:text=""
+                android:textColor="#272727"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="match_parent"
+                android:text="¥"
+                android:gravity="center"
+                android:textSize="19sp"
+                android:textColor="@color/color_fragment1_price"/>
+            <TextView
+                android:id="@+id/fruit_price"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="left"
+                android:background="#FFFFFF"
+                android:textColor="@color/color_fragment1_price"
+                android:textSize="22sp"
+                android:gravity="center_vertical"
+                />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/fruit_description"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text=""
+            android:textColor="#3C3C3C"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/laiyuan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom|left"
+            android:text=""
+            android:textSize="11sp" />
+    </LinearLayout>
+
+
+</LinearLayout>
